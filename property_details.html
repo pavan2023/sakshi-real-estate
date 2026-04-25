@@ -1,0 +1,458 @@
+<!-- Property Details -->
+<!DOCTYPE html>
+
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Deccan Vista - %VITE_BUSINESS_NAME%</title>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary-fixed-dim": "#a9c7ff",
+                        "on-primary": "#ffffff",
+                        "surface-container": "#eceef0",
+                        "surface-bright": "#f7f9fb",
+                        "on-surface-variant": "#43474f",
+                        "outline": "#747780",
+                        "on-primary-container": "#7594ca",
+                        "secondary-fixed-dim": "#b7c8e1",
+                        "secondary-container": "#d0e1fb",
+                        "on-secondary": "#ffffff",
+                        "on-primary-fixed": "#001b3d",
+                        "on-error-container": "#93000a",
+                        "background": "#f7f9fb",
+                        "surface-container-low": "#f2f4f6",
+                        "on-tertiary-fixed": "#2a1803",
+                        "inverse-surface": "#2d3133",
+                        "on-error": "#ffffff",
+                        "on-primary-fixed-variant": "#264778",
+                        "secondary-fixed": "#d3e4fe",
+                        "outline-variant": "#c4c6d0",
+                        "tertiary-fixed": "#ffdcbb",
+                        "surface-container-high": "#e6e8ea",
+                        "inverse-on-surface": "#eff1f3",
+                        "error": "#ba1a1a",
+                        "tertiary-fixed-dim": "#e3c09f",
+                        "surface": "#f7f9fb",
+                        "surface-tint": "#405f91",
+                        "tertiary": "#251401",
+                        "tertiary-container": "#3c2810",
+                        "primary-container": "#002b5b",
+                        "surface-dim": "#d8dadc",
+                        "on-background": "#191c1e",
+                        "error-container": "#ffdad6",
+                        "surface-container-lowest": "#ffffff",
+                        "inverse-primary": "#a9c7ff",
+                        "secondary": "#505f76",
+                        "on-secondary-fixed": "#0b1c30",
+                        "on-tertiary-fixed-variant": "#5a4228",
+                        "on-secondary-fixed-variant": "#38485d",
+                        "surface-variant": "#e0e3e5",
+                        "on-surface": "#191c1e",
+                        "primary-fixed": "#d6e3ff",
+                        "surface-container-highest": "#e0e3e5",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary-container": "#54647a",
+                        "primary": "#001736",
+                        "on-tertiary-container": "#ac8e6f"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Manrope"],
+                        "body": ["Manrope"],
+                        "label": ["Manrope"]
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+
+        body {
+            font-family: 'Manrope', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-background text-on-surface antialiased">
+    <!-- TopNavBar -->
+    <nav
+        class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-950/80 backdrop-blur-xl shadow-[0_20px_40px_rgba(25,28,30,0.06)]">
+        <div class="flex justify-between items-center w-full px-6 py-4 md:px-12 max-w-screen-2xl mx-auto">
+            <div
+                class="text-xl font-bold tracking-tighter text-blue-950 dark:text-white font-manrope antialiased tracking-tight">
+                <a href="index.html">%VITE_BUSINESS_NAME%</a>
+            </div>
+            <div class="hidden md:flex space-x-8 items-center">
+                <a class="text-blue-950 dark:text-white border-b-2 border-blue-900 dark:border-blue-400 pb-1 font-manrope antialiased tracking-tight text-sm"
+                    href="property_listings.html">Properties</a>
+                <a class="text-slate-500 dark:text-slate-400 hover:text-blue-900 dark:hover:text-blue-200 transition-colors font-manrope antialiased tracking-tight text-sm"
+                    href="services.html">Services</a>
+                <a class="text-slate-500 dark:text-slate-400 hover:text-blue-900 dark:hover:text-blue-200 transition-colors font-manrope antialiased tracking-tight text-sm"
+                    href="about_us.html">About Us</a>
+                <a class="text-slate-500 dark:text-slate-400 hover:text-blue-900 dark:hover:text-blue-200 transition-colors font-manrope antialiased tracking-tight text-sm"
+                    href="index.html#contact">Contact</a>
+                <a href="tel:%VITE_BUSINESS_MOBILE%"
+                    class="bg-primary-fixed text-on-primary-fixed px-6 py-2.5 rounded-lg font-semibold text-sm hover:bg-primary-container hover:text-white transition-all duration-300 active:scale-[0.98]">
+                    Book Viewing
+                </a>
+            </div>
+            <button class="md:hidden text-primary">
+                <span class="material-symbols-outlined">menu</span>
+            </button>
+        </div>
+    </nav>
+    <main class="pt-24 pb-16">
+        <!-- Editorial Image Gallery -->
+        <section class="max-w-screen-2xl mx-auto px-6 md:px-12 mb-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 grid-rows-2 gap-4 h-[600px]">
+                <div class="md:col-span-2 md:row-span-2 relative overflow-hidden rounded-xl">
+                    <img alt="Main Living Area" class="w-full h-full object-cover"
+                        data-alt="Ultra-luxury modern living room in %VITE_CITY% with floor-to-ceiling windows, minimalist marble furniture, and warm evening ambient lighting"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrKEdLKT5zhcabjttlv2Jl-4UGF9BF1zAxoznaM1jVH3nJL2oiGWSHLbS9fCmgI4AB76UXxYPjyow6hHJnxHEBfSjveXrQ_lWcTqUrOMTkp-o98e1oCcY8EQr9LjTEBn7j_v9ovw5UZM0jaX5xlCoWBq8D6KHKkvfLdnfytc7FEM_CV_Z6itALOpYTStLqKeRMPzlIU9vCryhD7FoRir6muzFKoaGviDds8IFQGLePjB8nH3Q23hk9hmxzriNWdgjfwODkK-UUIaVK" />
+                    <div class="absolute top-4 left-4">
+                        <span
+                            class="bg-primary-container text-white px-4 py-1.5 rounded-full text-xs font-bold tracking-widest uppercase">Premium
+                            Listing</span>
+                    </div>
+                </div>
+                <div class="md:col-span-1 md:row-span-1 overflow-hidden rounded-xl">
+                    <img alt="Bedroom Detail" class="w-full h-full object-cover"
+                        data-alt="Sophisticated master bedroom with silk bedding, designer wooden paneling, and soft recessed ceiling lighting in a luxury %VITE_CITY% apartment"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuCVSnbNfZLSbPx9NswncW_gxcjDeJQPGHbGK6xGpFY1R37RecivDZOYuFWaL6sA7DrWA14RpxyTLr0t6hmeijZ4eOuf7ALneqjlW2zZDSANhZPjLgkXij6GfcV8tGDcJOjpbk4Ucii_r7d3dzJkUFjJLg2j401ImmyomH7skwcEE6z2IBiRTu-2F-eXne6riR8pZI_gaGO2_lPJGUvFveObTrJhkg_fPdsHK7XP9C1kU040TT6GDOiXsoa8vC5BNHag9AdoeKMglVBZ" />
+                </div>
+                <div class="md:col-span-1 md:row-span-1 overflow-hidden rounded-xl">
+                    <img alt="Kitchen" class="w-full h-full object-cover"
+                        data-alt="Modern gourmet kitchen with dark cabinetry, high-end built-in appliances, and a sleek island with quartz countertop"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZHmmso_BdCAl7gwHSKrjL-V7Ze1mFKfSNXZHP6EeC8P2HNXJaWMhMHfNbplyzjRVGYnHz4h6NHso-1HQ-owD9T1OsZy4fYyPOjNU9fgbypRp6SI6l3XQ1TvgGG6hs71nWaie4r3ga0V50cwY33ImOLQLNGbjJlIT-7gl0qmidD8odN5M8JVG9Su4ASTSzo01J95a5vvW7s-332WVfluugzfPvahuGuj9-26GC6NGM5OKSFhDQuio5y1Ppvg3xH-mPHULuhZfM-Gt8" />
+                </div>
+                <div class="md:col-span-2 md:row-span-1 relative overflow-hidden rounded-xl">
+                    <img alt="Balcony View" class="w-full h-full object-cover"
+                        data-alt="Spacious private terrace garden overlooking the lush greenery of the region's premium residential skyline at sunset"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDgbXnXXBII7NX39Vq_kLdHxJn_GDKfOS63fQf0Pk18o93VrX82EgtOMk7-uT6Um_Dtux22rfQYvLe2sN9tzY8k4dYtYEBagpPDUN6oG3uvyTgXdCPVh3kHN_vPXHVZA_9vficOZhhB-G5jooQKMZ7XLwqLO2sjhDnPyDz1lV7Dm5WhBfQ6isj2o76JWlofd49ED_ix2mc2ufXTUs4Ju-hy1K3HW3hvY38xt40Y2QwbFmdGZMphM4NYP3cxpxyz1uFn_T9VuWI8ZV5a" />
+                    <div
+                        class="absolute inset-0 bg-primary/20 flex items-center justify-center cursor-pointer hover:bg-primary/30 transition-colors group">
+                        <button
+                            class="bg-white/90 px-6 py-3 rounded-full text-primary font-bold flex items-center gap-2 group-hover:scale-105 transition-transform">
+                            <span class="material-symbols-outlined">grid_view</span>
+                            View All 24 Photos
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Content & Sidebar Layout -->
+        <div class="max-w-screen-2xl mx-auto px-6 md:px-12 grid grid-cols-1 lg:grid-cols-12 gap-12">
+            <!-- Main Content Column -->
+            <div class="lg:col-span-8">
+                <!-- Header Info -->
+                <div class="mb-10">
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span
+                            class="bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">Koregaon
+                            Park, %VITE_CITY%</span>
+                        <span
+                            class="bg-surface-container-high text-on-surface-variant px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">Ready
+                            to Move</span>
+                    </div>
+                    <h1 class="text-5xl md:text-6xl font-extrabold text-primary mb-2 tracking-tighter leading-tight">
+                        Deccan Vista Residences</h1>
+                    <p class="text-xl text-secondary font-medium">Bespoke 3 &amp; 4 BHK Architectural Masterpieces</p>
+                </div>
+                <!-- Key Specs Bento Grid -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
+                    <div class="bg-surface-container-lowest p-6 rounded-xl shadow-sm">
+                        <span class="material-symbols-outlined text-primary-container mb-3"
+                            style="font-variation-settings: 'FILL' 1;">bed</span>
+                        <div class="text-xs font-bold text-outline uppercase tracking-widest mb-1">Configuration</div>
+                        <div class="text-lg font-bold text-primary">3 &amp; 4 BHK</div>
+                    </div>
+                    <div class="bg-surface-container-lowest p-6 rounded-xl shadow-sm">
+                        <span class="material-symbols-outlined text-primary-container mb-3"
+                            style="font-variation-settings: 'FILL' 1;">square_foot</span>
+                        <div class="text-xs font-bold text-outline uppercase tracking-widest mb-1">Area</div>
+                        <div class="text-lg font-bold text-primary">2,450 - 3,800 Sq Ft</div>
+                    </div>
+                    <div class="bg-surface-container-lowest p-6 rounded-xl shadow-sm">
+                        <span class="material-symbols-outlined text-primary-container mb-3"
+                            style="font-variation-settings: 'FILL' 1;">apartment</span>
+                        <div class="text-xs font-bold text-outline uppercase tracking-widest mb-1">Floor</div>
+                        <div class="text-lg font-bold text-primary">12th of 24</div>
+                    </div>
+                    <div class="bg-surface-container-lowest p-6 rounded-xl shadow-sm">
+                        <span class="material-symbols-outlined text-primary-container mb-3"
+                            style="font-variation-settings: 'FILL' 1;">directions_car</span>
+                        <div class="text-xs font-bold text-outline uppercase tracking-widest mb-1">Parking</div>
+                        <div class="text-lg font-bold text-primary">3 Covered Slots</div>
+                    </div>
+                </div>
+                <!-- Description Section -->
+                <div class="mb-16">
+                    <h2 class="text-2xl font-extrabold text-primary mb-6 flex items-center gap-3">
+                        <span class="w-8 h-[2px] bg-primary"></span>
+                        Architectural Vision
+                    </h2>
+                    <div class="space-y-6 text-on-surface-variant text-lg leading-relaxed max-w-3xl">
+                        <p>Deccan Vista is more than a residence; it's a testament to the region's evolving skyline.
+                            Curated
+                            by %VITE_BUSINESS_NAME%, this unit in Premium Estates represents the pinnacle of urban
+                            luxury, blending natural cross-ventilation with bespoke interior finishes.</p>
+                        <p>The residence features expansive living zones that transition seamlessly into a wrap-around
+                            terrace, offering panoramic views of the Mula-Mutha river. Every material, from the Italian
+                            Botticino marble to the automated lighting systems, has been hand-selected to meet the
+                            highest standards of the Architectural Curator.</p>
+                    </div>
+                </div>
+                <!-- Amenities Section -->
+                <div class="mb-16 bg-surface-container-low p-8 md:p-12 rounded-2xl">
+                    <h2 class="text-2xl font-extrabold text-primary mb-8">World-Class Amenities</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-y-6 gap-x-12">
+                        <div class="flex items-start gap-4">
+                            <span class="material-symbols-outlined text-primary-container">pool</span>
+                            <div>
+                                <h4 class="font-bold text-primary">Temperature-Controlled Infinity Pool</h4>
+                                <p class="text-sm text-secondary">Rooftop access with private cabanas and deck lounge.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <span class="material-symbols-outlined text-primary-container">fitness_center</span>
+                            <div>
+                                <h4 class="font-bold text-primary">Holistic Wellness Center</h4>
+                                <p class="text-sm text-secondary">State-of-the-art gym with yoga studio and steam room.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <span class="material-symbols-outlined text-primary-container">park</span>
+                            <div>
+                                <h4 class="font-bold text-primary">Zen Garden &amp; Jogging Track</h4>
+                                <p class="text-sm text-secondary">Landscaped walking trails with native flora.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <span class="material-symbols-outlined text-primary-container">security</span>
+                            <div>
+                                <h4 class="font-bold text-primary">5-Tier Integrated Security</h4>
+                                <p class="text-sm text-secondary">24/7 biometric access and concierge services.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Floor Plan Section -->
+                <div class="mb-16">
+                    <h2 class="text-2xl font-extrabold text-primary mb-8">Floor Plan &amp; Layout</h2>
+                    <div class="bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/30">
+                        <img alt="Floor Plan" class="w-full rounded-xl"
+                            data-alt="Highly detailed architectural 2D floor plan of a 4 BHK luxury apartment showing room dimensions, terrace area, and modular kitchen layout"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCsoTMOIlszvdj3tiUwvSlzEV5eNFYdZqrFqEXdOH3m89xMFNvdJ_BQ_DMPs3JCXR_gUPaJHRHQjtL5KlUYj1hHQWMDUYs5-iHQ7yLVnqFUI1zkQmUjat6OaFrGt6chmzoOqOFWnROt1cCw675Vx28iDoqmjXYV7aAKkHiLfYOz75VLcMYEykZti5YHlJ_Ltr6FWPo0EmFxjWnhplDFZsP7irq7Tm6vvLYUvEDFedcRQqrVtCci5JTrAh6jR1DQc1WoUUfap1pyK2v" />
+                    </div>
+                </div>
+                <!-- Proximity Map Section -->
+                <div class="mb-16">
+                    <h2 class="text-2xl font-extrabold text-primary mb-8">Connectivity &amp; Neighborhood</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+                        <div class="md:col-span-8 h-96 bg-surface-container-high rounded-2xl relative overflow-hidden">
+                            <div class="absolute inset-0 flex items-center justify-center bg-slate-200">
+                                <!-- Placeholder for Map Image -->
+                                <img alt="Map of %VITE_CITY% Area" class="w-full h-full object-cover opacity-50 grayscale"
+                                    data-alt="Stylized minimalist city map of Premium Estates, %VITE_CITY% with highlight markers for schools, hospitals, and major transit hubs"
+                                    data-location="%VITE_CITY%, India"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAh8hIDWptlhy5pNONSbnIE_L64txe9iLgjOKL0x7QvA9Aijuq3rtqLO5e7QyESfinqM5Fclqaogkh9TtqB5haAqv34nFX4n_HhBsYI07wXic5_qOuo8q5sM8OENz1OV6lPf0C-gljU4xRX1VJZJC62ln7O794y_KNOn5-mXM5PEGT28fa0c_nCmu9MoeGvC48IVdBCNlOSMmisah_mjwnRbLOt1ioMawdF-75vHgTQkNtnP_m81t29uLfjDN43EGdercQAiNfZTn-8" />
+                                <div class="absolute inset-0 flex items-center justify-center">
+                                    <div class="bg-primary text-white p-3 rounded-full shadow-lg">
+                                        <span class="material-symbols-outlined">location_on</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="md:col-span-4 space-y-6">
+                            <div>
+                                <h4 class="font-bold text-primary mb-3 text-sm uppercase tracking-widest">Education</h4>
+                                <ul class="space-y-2">
+                                    <li class="flex justify-between text-sm">
+                                        <span class="text-on-surface-variant">Vibgyor High School</span>
+                                        <span class="font-bold text-primary">1.2 km</span>
+                                    </li>
+                                    <li class="flex justify-between text-sm">
+                                        <span class="text-on-surface-variant">Symbiosis International</span>
+                                        <span class="font-bold text-primary">2.5 km</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-primary mb-3 text-sm uppercase tracking-widest">Healthcare
+                                </h4>
+                                <ul class="space-y-2">
+                                    <li class="flex justify-between text-sm">
+                                        <span class="text-on-surface-variant">Ruby Hall Clinic</span>
+                                        <span class="font-bold text-primary">3.1 km</span>
+                                    </li>
+                                    <li class="flex justify-between text-sm">
+                                        <span class="text-on-surface-variant">Jehangir Hospital</span>
+                                        <span class="font-bold text-primary">3.5 km</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-primary mb-3 text-sm uppercase tracking-widest">Leisure</h4>
+                                <ul class="space-y-2">
+                                    <li class="flex justify-between text-sm">
+                                        <span class="text-on-surface-variant">Phoenix Marketcity</span>
+                                        <span class="font-bold text-primary">4.0 km</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Sticky Sidebar Column -->
+            <div class="lg:col-span-4">
+                <div class="sticky top-28 space-y-6">
+                    <!-- Consultant Card -->
+                    <div class="bg-primary p-8 rounded-2xl text-white shadow-xl relative overflow-hidden">
+                        <div class="absolute -right-8 -top-8 w-32 h-32 bg-white/5 rounded-full blur-2xl"></div>
+                        <div class="flex items-center gap-4 mb-6 relative">
+                            <div class="w-16 h-16 rounded-full border-2 border-primary-fixed overflow-hidden shrink-0">
+                                <img alt="%VITE_BUSINESS_OWNER%" class="w-full h-full object-cover"
+                                    data-alt="Professional portrait of a middle-aged South Asian real estate executive in a sharp navy suit, smiling confidently"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCNQIvSL8bqPuhW9pn02w9N6OOyNk1Zq1OcwGIMQ2J_4x6vVH8K_sEDi--dEC2isH6R3wbwVUhm4GZCf-kXUTvNxOz-NZxmeJjuLcIThEiwPp6-_wZzQ_LQh4vr1wpv3k_PMznkXjDg7uNc_C4mXRsohxelWY9K_z3xIc4i-UHy7kl7Wv5XYzRAU3cIcvRH8_4S5YFkOHSIve2Y6B2X1HSA7Q4Z3jwRalW3k7xWofqrIu53F8AiQmxU8YqXSCLLAKXnHspnts7S33jA" />
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold leading-none">%VITE_BUSINESS_OWNER%</h3>
+                                <p class="text-blue-200 text-xs font-medium mt-1">Principal Consultant</p>
+                            </div>
+                        </div>
+                        <div class="space-y-3 mb-6 relative">
+                            <div class="flex items-center gap-3 text-sm">
+                                <span class="material-symbols-outlined text-blue-300">phone_in_talk</span>
+                                <span>%VITE_BUSINESS_MOBILE%</span>
+                            </div>
+                            <div class="flex items-center gap-3 text-sm">
+                                <span class="material-symbols-outlined text-blue-300">verified_user</span>
+                                <span>15+ Years in %VITE_CITY% Realty</span>
+                            </div>
+                        </div>
+                        <a href="tel:%VITE_BUSINESS_MOBILE%"
+                            class="w-full bg-white text-primary font-bold py-3 rounded-lg hover:bg-primary-fixed transition-colors active:scale-[0.98] block text-center">
+                            Call Directly
+                        </a>
+                    </div>
+                    <!-- Booking Form -->
+                    <div
+                        class="bg-surface-container-lowest p-8 rounded-2xl shadow-[0_20px_40px_rgba(25,28,30,0.06)] border border-outline-variant/20">
+                        <h3 class="text-xl font-extrabold text-primary mb-6">Schedule a Viewing</h3>
+                        <form action="#" class="space-y-4">
+                            <div>
+                                <label
+                                    class="block text-xs font-bold text-outline uppercase tracking-widest mb-1.5">Full
+                                    Name</label>
+                                <input
+                                    class="w-full bg-surface-container-low border-none rounded-lg focus:ring-2 focus:ring-primary text-sm p-3"
+                                    placeholder="Enter your name" type="text" />
+                            </div>
+                            <div>
+                                <label
+                                    class="block text-xs font-bold text-outline uppercase tracking-widest mb-1.5">Phone
+                                    Number</label>
+                                <input
+                                    class="w-full bg-surface-container-low border-none rounded-lg focus:ring-2 focus:ring-primary text-sm p-3"
+                                    placeholder="+91" type="tel" />
+                            </div>
+                            <div>
+                                <label
+                                    class="block text-xs font-bold text-outline uppercase tracking-widest mb-1.5">Preferred
+                                    Date</label>
+                                <input
+                                    class="w-full bg-surface-container-low border-none rounded-lg focus:ring-2 focus:ring-primary text-sm p-3"
+                                    type="date" />
+                            </div>
+                            <div>
+                                <label
+                                    class="block text-xs font-bold text-outline uppercase tracking-widest mb-1.5">Unit
+                                    Choice</label>
+                                <select
+                                    class="w-full bg-surface-container-low border-none rounded-lg focus:ring-2 focus:ring-primary text-sm p-3">
+                                    <option>3 BHK Premium</option>
+                                    <option>4 BHK Presidential Suite</option>
+                                </select>
+                            </div>
+                            <a href="tel:%VITE_BUSINESS_MOBILE%"
+                                class="w-full bg-primary-container text-white font-bold py-4 rounded-lg mt-4 shadow-lg hover:bg-primary transition-all duration-300 active:scale-[0.98] block text-center">
+                                Request Instant Call Back
+                            </a>
+                            <p class="text-[10px] text-center text-secondary uppercase tracking-tight mt-4">No
+                                commitment required. Standard data rates apply.</p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-slate-50 dark:bg-slate-900 w-full py-16">
+        <div class="max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div>
+                <div class="text-lg font-extrabold text-blue-950 dark:text-white mb-6 font-manrope">
+                    %VITE_BUSINESS_NAME%
+                </div>
+                <p class="text-slate-500 dark:text-slate-400 font-manrope text-sm leading-relaxed max-w-sm mb-8">
+                    Curating the region's finest architectural landmarks since 2008. We provide expert consultancy for
+                    premium
+                    residential and commercial spaces.
+                </p>
+                <div class="flex space-x-6">
+                    <a class="text-slate-500 dark:text-slate-400 hover:text-blue-900 dark:hover:text-blue-300 transition-opacity duration-200"
+                        href="#">Privacy Policy</a>
+                    <a class="text-slate-500 dark:text-slate-400 hover:text-blue-900 dark:hover:text-blue-300 transition-opacity duration-200"
+                        href="#">Terms of Service</a>
+                </div>
+            </div>
+            <div class="grid grid-cols-2 gap-8">
+                <div>
+                    <h4 class="text-blue-950 dark:text-blue-200 font-semibold mb-4 text-sm uppercase tracking-widest">
+                        Resources</h4>
+                    <ul class="space-y-3 font-manrope text-sm leading-relaxed">
+                        <li><a class="text-slate-500 dark:text-slate-400 hover:text-blue-700 dark:hover:text-blue-300 underline-offset-4 hover:underline transition-opacity"
+                                href="#">Area Guide</a></li>
+                        <li><a class="text-slate-500 dark:text-slate-400 hover:text-blue-700 dark:hover:text-blue-300 underline-offset-4 hover:underline transition-opacity"
+                                href="#">Consultancy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-blue-950 dark:text-blue-200 font-semibold mb-4 text-sm uppercase tracking-widest">
+                        Contact</h4>
+                    <p class="text-slate-500 dark:text-slate-400 text-sm mb-2">%VITE_BUSINESS_ADDRESS%</p>
+                    <p class="text-slate-500 dark:text-slate-400 text-sm">%VITE_BUSINESS_EMAIL%</p>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-8 mt-12 pt-8 border-t border-slate-200 dark:border-slate-800">
+            <p class="text-slate-500 dark:text-slate-400 font-manrope text-sm text-center">
+                © 2026 %VITE_BUSINESS_NAME%. %VITE_FOOTER_COPY%
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>

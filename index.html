@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <title>%VITE_BUSINESS_NAME%</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-primary-fixed-variant": "#264778",
+                        "on-tertiary-container": "#ac8e6f",
+                        "on-surface": "#191c1e",
+                        "on-secondary-fixed": "#0b1c30",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary": "#ffffff",
+                        "on-secondary-container": "#54647a",
+                        "on-primary": "#ffffff",
+                        "secondary-fixed": "#d3e4fe",
+                        "surface-container-highest": "#e0e3e5",
+                        "surface": "#f7f9fb",
+                        "surface-variant": "#e0e3e5",
+                        "secondary": "#505f76",
+                        "tertiary-container": "#3c2810",
+                        "on-primary-fixed": "#001b3d",
+                        "surface-container": "#eceef0",
+                        "inverse-primary": "#a9c7ff",
+                        "surface-tint": "#405f91",
+                        "on-surface-variant": "#43474f",
+                        "background": "#f7f9fb",
+                        "on-error": "#ffffff",
+                        "error": "#ba1a1a",
+                        "primary-container": "#002b5b",
+                        "on-background": "#191c1e",
+                        "tertiary": "#251401",
+                        "on-tertiary-fixed-variant": "#5a4228",
+                        "secondary-fixed-dim": "#b7c8e1",
+                        "on-primary-container": "#7594ca",
+                        "surface-bright": "#f7f9fb",
+                        "tertiary-fixed-dim": "#e3c09f",
+                        "primary-fixed": "#d6e3ff",
+                        "secondary-container": "#d0e1fb",
+                        "surface-dim": "#d8dadc",
+                        "surface-container-low": "#f2f4f6",
+                        "tertiary-fixed": "#ffdcbb",
+                        "inverse-on-surface": "#eff1f3",
+                        "outline": "#747780",
+                        "outline-variant": "#c4c6d0",
+                        "error-container": "#ffdad6",
+                        "on-error-container": "#93000a",
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary-fixed-variant": "#38485d",
+                        "primary-fixed-dim": "#a9c7ff",
+                        "on-tertiary-fixed": "#2a1803",
+                        "primary": "#001736",
+                        "surface-container-high": "#e6e8ea",
+                        "inverse-surface": "#2d3133"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Manrope"],
+                        "body": ["Manrope"],
+                        "label": ["Manrope"]
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+
+        .glass-nav {
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+    </style>
+</head>
+
+<body class="bg-background font-body text-on-surface">
+    <!-- TopNavBar -->
+    <header
+        class="sticky top-0 w-full z-50 bg-white/80 dark:bg-slate-950/80 backdrop-blur-lg no-border shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
+        <nav class="flex items-center justify-between px-8 py-5 max-w-7xl mx-auto">
+            <div class="text-xl font-extrabold tracking-tighter text-blue-950 dark:text-white">
+                %VITE_BUSINESS_NAME%
+            </div>
+            <div class="hidden md:flex gap-8 items-center">
+                <a class="font-manrope tracking-tight text-sm font-medium transition-transform text-slate-600 hover:text-blue-900 dark:hover:text-white transition-all"
+                    href="property_listings.html">Properties</a>
+                <a class="text-slate-600 dark:text-slate-400 hover:text-blue-900 dark:hover:text-white transition-all font-manrope tracking-tight text-sm font-medium"
+                    href="services.html">Services</a>
+                <a class="text-slate-600 dark:text-slate-400 hover:text-blue-900 dark:hover:text-white transition-all font-manrope tracking-tight text-sm font-medium"
+                    href="#">Market Insights</a>
+                <a class="text-slate-600 dark:text-slate-400 hover:text-blue-900 dark:hover:text-white transition-all font-manrope tracking-tight text-sm font-medium"
+                    href="about_us.html">About Us</a>
+                <a class="text-slate-600 dark:text-slate-400 hover:text-blue-900 dark:hover:text-white transition-all font-manrope tracking-tight text-sm font-medium"
+                    href="#contact">Contact</a>
+            </div>
+            <a href="tel:%VITE_BUSINESS_MOBILE%"
+                class="bg-primary-fixed text-on-primary-fixed px-6 py-2.5 rounded-lg font-bold text-sm hover:bg-primary-container hover:text-on-primary-container transition-all hover:-translate-y-1">
+                Book a Viewing
+            </a>
+        </nav>
+    </header>
+    <main>
+        <!-- Hero Section -->
+        <section class="relative min-h-[870px] flex items-center overflow-hidden bg-primary">
+            <div class="absolute inset-0 z-0">
+                <img class="w-full h-full object-cover opacity-50"
+                    data-alt="Panoramic view of %VITE_CITY% city skyline at dusk with modern residential towers and warm city lights reflecting soft golden hour glow"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQzKy_mTlXyRjg4eIVihIh98XOYEYS6zMagVEWFgIxlp_dxNZ5JQpsnsY4xZ1VnvMLVC8iXtnKZOMmWNngnTFTYR0UX7gCCcjper9NSMIKrtevhg2yFM3BbQ-cTPv08g5_23zW37c-kF4tda1s2rcG-C-kU3PZjtrNNrQZrAeBwe3_IhLBrRobFygRM6xuJmo7rcy3Nv55aGSLdErKE3-sA0zofLvd_B74X3w_5GGvYiO3U85DiclrecQ9DE791-mE0g_3Wag-T_qN" />
+                <div class="absolute inset-0 bg-gradient-to-tr from-primary via-primary/80 to-transparent"></div>
+            </div>
+            <div class="relative z-10 max-w-7xl mx-auto px-8 w-full">
+                <div class="max-w-3xl">
+                    <span
+                        class="inline-block bg-secondary-container text-on-secondary-container px-4 py-1.5 rounded-full text-xs font-bold tracking-widest mb-6">
+                        %VITE_HERO_BADGE%
+                    </span>
+                    <h1 class="text-5xl md:text-7xl font-extrabold text-white leading-tight tracking-tighter mb-6">
+                        %VITE_HERO_TITLE%
+                    </h1>
+                    <p class="text-xl text-on-primary-container font-light leading-relaxed mb-4 max-w-2xl">
+                        %VITE_BUSINESS_DESC%
+                    </p>
+                    <!-- Social Proof -->
+                    <div class="flex flex-wrap items-center gap-3 mb-8">
+                        <div class="flex items-center gap-1.5 bg-white/10 backdrop-blur-md px-4 py-2 rounded-full">
+                            <span class="material-symbols-outlined text-yellow-400 text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+                            <span class="text-white font-bold text-sm">%VITE_BUSINESS_REVIEWS%</span>
+                        </div>
+                        <div class="flex items-center gap-1.5 bg-white/10 backdrop-blur-md px-4 py-2 rounded-full">
+                            <span class="material-symbols-outlined text-green-400 text-base">group</span>
+                            <span class="text-white font-bold text-sm">%VITE_BUSINESS_ENQUIRIES%</span>
+                            <span class="text-on-primary-container text-sm">people recently enquired</span>
+                        </div>
+                    </div>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="property_listings.html"
+                            class="bg-primary-fixed text-on-primary-fixed px-8 py-4 rounded-xl font-bold text-lg flex items-center justify-center gap-2 hover:-translate-y-1 transition-transform">
+                            Explore Listings
+                            <span class="material-symbols-outlined">arrow_forward</span>
+                        </a>
+                        <a class="border border-white/20 bg-white/10 backdrop-blur-md text-white px-8 py-4 rounded-xl font-bold text-lg flex items-center justify-center gap-2 hover:bg-white/20 transition-all"
+                            href="tel:%VITE_BUSINESS_MOBILE%">
+                            <span class="material-symbols-outlined">call</span>
+                            Call Now
+                        </a>
+                        <a class="border border-green-400/50 bg-green-500/20 backdrop-blur-md text-white px-8 py-4 rounded-xl font-bold text-lg flex items-center justify-center gap-2 hover:bg-green-500/30 transition-all"
+                            href="https://wa.me/%VITE_BUSINESS_WHATSAPP%" target="_blank">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.094.541 4.061 1.489 5.775L0 24l6.389-1.456A11.94 11.94 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.793 9.793 0 01-5.009-1.374l-.36-.214-3.732.851.869-3.641-.235-.374A9.786 9.786 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg>
+                            WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Services Section -->
+        <section class="py-24 bg-surface">
+            <div class="max-w-7xl mx-auto px-8">
+                <div class="mb-16">
+                    <span class="text-primary font-bold text-xs tracking-[0.2em] block mb-2 uppercase">OUR
+                        EXPERTISE</span>
+                    <h2 class="text-4xl font-extrabold text-primary tracking-tight">Curated Real Estate Services</h2>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Residential Sales -->
+                    <div
+                        class="bg-surface-container-lowest p-10 rounded-xl group hover:bg-primary transition-colors duration-500">
+                        <div
+                            class="w-14 h-14 bg-secondary-container rounded-lg flex items-center justify-center mb-8 group-hover:bg-primary-container transition-colors">
+                            <span class="material-symbols-outlined text-primary group-hover:text-white"
+                                style="font-variation-settings: 'FILL' 1;">home</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-primary mb-4 group-hover:text-white">Residential Sales</h3>
+                        <p class="text-secondary leading-relaxed group-hover:text-on-primary-container mb-8">
+                            Premium villas and apartments in the region's most sought-after neighborhoods, curated for
+                            quality and value.
+                        </p>
+                        <a class="text-primary font-bold flex items-center gap-2 group-hover:text-white" href="property_listings.html">
+                            View Options <span class="material-symbols-outlined text-sm">trending_flat</span>
+                        </a>
+                    </div>
+                    <!-- Rental Management -->
+                    <div
+                        class="bg-surface-container-lowest p-10 rounded-xl group hover:bg-primary transition-colors duration-500">
+                        <div
+                            class="w-14 h-14 bg-secondary-container rounded-lg flex items-center justify-center mb-8 group-hover:bg-primary-container transition-colors">
+                            <span class="material-symbols-outlined text-primary group-hover:text-white"
+                                style="font-variation-settings: 'FILL' 1;">key</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-primary mb-4 group-hover:text-white">Rental Management</h3>
+                        <p class="text-secondary leading-relaxed group-hover:text-on-primary-container mb-8">
+                            End-to-end hassle-free rental solutions for landlords and verified high-quality properties
+                            for tenants.
+                        </p>
+                        <a class="text-primary font-bold flex items-center gap-2 group-hover:text-white" href="property_listings.html">
+                            List Property <span class="material-symbols-outlined text-sm">trending_flat</span>
+                        </a>
+                    </div>
+                    <!-- Property Consultation -->
+                    <div
+                        class="bg-surface-container-lowest p-10 rounded-xl group hover:bg-primary transition-colors duration-500">
+                        <div
+                            class="w-14 h-14 bg-secondary-container rounded-lg flex items-center justify-center mb-8 group-hover:bg-primary-container transition-colors">
+                            <span class="material-symbols-outlined text-primary group-hover:text-white"
+                                style="font-variation-settings: 'FILL' 1;">query_stats</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-primary mb-4 group-hover:text-white">Property Consultation
+                        </h3>
+                        <p class="text-secondary leading-relaxed group-hover:text-on-primary-container mb-8">
+                            Strategic advice on portfolio expansion and market trends in the rapidly developing %VITE_CITY%
+                            corridors.
+                        </p>
+                        <a class="text-primary font-bold flex items-center gap-2 group-hover:text-white" href="services.html">
+                            Consult Now <span class="material-symbols-outlined text-sm">trending_flat</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Why Choose Us / Trust Section -->
+        <section class="py-24 bg-surface-container-low relative overflow-hidden">
+            <div class="max-w-7xl mx-auto px-8 relative z-10">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                    <div>
+                        <h2 class="text-4xl font-extrabold text-primary mb-8 tracking-tight">The Foundation of Our Trust
+                        </h2>
+                        <div class="space-y-8">
+                            <div class="flex gap-6">
+                                <div
+                                    class="flex-shrink-0 w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-sm">
+                                    <span class="material-symbols-outlined text-primary">verified_user</span>
+                                </div>
+                                <div>
+                                    <h4 class="text-lg font-bold text-primary mb-2">Transparent Transactions</h4>
+                                    <p class="text-secondary">Every legal detail scrutinized, ensuring every deal is as
+                                        transparent as glass.</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-6">
+                                <div
+                                    class="flex-shrink-0 w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-sm">
+                                    <span class="material-symbols-outlined text-primary">insights</span>
+                                </div>
+                                <div>
+                                    <h4 class="text-lg font-bold text-primary mb-2">Market Expertise</h4>
+                                    <p class="text-secondary">Deep local knowledge of all premier neighborhoods since
+                                        years.</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-6">
+                                <div
+                                    class="flex-shrink-0 w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-sm">
+                                    <span class="material-symbols-outlined text-primary">stars</span>
+                                </div>
+                                <div>
+                                    <h4 class="text-lg font-bold text-primary mb-2">%VITE_BUSINESS_REVIEWS%</h4>
+                                    <p class="text-secondary">Consistently rated as the region's most reliable
+                                        independent property consultancy.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative">
+                        <div class="aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl">
+                            <img class="w-full h-full object-cover"
+                                data-alt="Interior of a luxury modern living room in %VITE_CITY% with floor-to-ceiling windows, minimalist furniture, and warm natural lighting"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAcjvUYk0CY7KLG90PsnllAL_cUtsTJJZuWT1VilkGKdNcwFL4KX54uRu7epFE37cmhg-JoFt9wrRLGPvyLK3g_UU8rSxgjVxPQ-eiI1wh75INEJLESAv7Az-mAcVtDwni0HvDa5qQkngwUAH63goGamC7CxBHfCF6SfMe_-QlL6aUVmEsyyfApZvUv6QKExEFYLAKW2dLPzKG06Wr45XLFUwIhNdf-NSg27VBuWKGljMtO5SsnOgneD__3k61NZNuBUUmTex3dUXHi" />
+                        </div>
+                        <div
+                            class="absolute -bottom-8 -left-8 bg-primary p-8 rounded-2xl text-white shadow-xl max-w-xs">
+                            <p class="text-4xl font-extrabold mb-1">15+</p>
+                            <p class="text-sm font-medium text-on-primary-container">Years of Legacy in %VITE_CITY% Real
+                                Estate</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Testimonials -->
+        <section class="py-24 bg-surface overflow-hidden">
+            <div class="max-w-7xl mx-auto px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-extrabold text-primary mb-4 tracking-tight">Client Perspectives</h2>
+                    <p class="text-secondary max-w-2xl mx-auto">Real experiences from homeowners and investors who found
+                        their space with us.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Testimonial 1 -->
+                    <div class="bg-surface-container-lowest p-8 rounded-2xl border border-outline-variant/10">
+                        <div class="flex gap-1 text-on-tertiary-container mb-6">
+                            <span class="material-symbols-outlined"
+                                style="font-variation-settings: 'FILL' 1;">star</span>
+                            <span class="material-symbols-outlined"
+                                style="font-variation-settings: 'FILL' 1;">star</span>
+                            <span class="material-symbols-outlined"
+                                style="font-variation-settings: 'FILL' 1;">star</span>
+                            <span class="material-symbols-outlined"
+                                style="font-variation-settings: 'FILL' 1;">star</span>
+                            <span class="material-symbols-outlined"
+                                style="font-variation-settings: 'FILL' 1;">star</span>
+                        </div>
+                        <p class="text-on-surface leading-relaxed italic mb-8">"%VITE_REVIEW_1_TEXT%"</p>
+                        <div class="flex items-center gap-4">
+                            <div
+                                class="w-12 h-12 rounded-full bg-secondary-container flex items-center justify-center font-bold text-primary">
+                                %VITE_REVIEW_1_INIT%</div>
+                            <div>
+                                <h5 class="font-bold text-primary">%VITE_REVIEW_1_NAME%</h5>
+                                <p class="text-xs text-secondary">%VITE_REVIEW_1_ROLE%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Testimonial 2 -->
+                    <div class="bg-surface-container-lowest p-8 rounded-2xl border border-outline-variant/10">
+                        <div class="flex gap-1 text-on-tertiary-container mb-6">
+                            <span class="material-symbols-outlined"
+                                style="font-variation-settings: 'FILL' 1;">star</span>
+                            <span class="material-symbols-outlined"
+                                style="font-variation-settings: 'FILL' 1;">star</span>
+                            <span class="material-symbols-outlined"
+                                style="font-variation-settings: 'FILL' 1;">star</span>
+                            <span class="material-symbols-outlined"
+                                style="font-variation-settings: 'FILL' 1;">star</span>
+                            <span class="material-symbols-outlined"
+                                style="font-variation-settings: 'FILL' 1;">star</span>
+                        </div>
+                        <p class="text-on-surface leading-relaxed italic mb-8">"%VITE_REVIEW_2_TEXT%"</p>
+                        <div class="flex items-center gap-4">
+                            <div
+                                class="w-12 h-12 rounded-full bg-secondary-container flex items-center justify-center font-bold text-primary">
+                                %VITE_REVIEW_2_INIT%</div>
+                            <div>
+                                <h5 class="font-bold text-primary">%VITE_REVIEW_2_NAME%</h5>
+                                <p class="text-xs text-secondary">%VITE_REVIEW_2_ROLE%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Testimonial 3 -->
+                    <div class="bg-surface-container-lowest p-8 rounded-2xl border border-outline-variant/10">
+                        <div class="flex gap-1 text-on-tertiary-container mb-6">
+                            <span class="material-symbols-outlined"
+                                style="font-variation-settings: 'FILL' 1;">star</span>
+                            <span class="material-symbols-outlined"
+                                style="font-variation-settings: 'FILL' 1;">star</span>
+                            <span class="material-symbols-outlined"
+                                style="font-variation-settings: 'FILL' 1;">star</span>
+                            <span class="material-symbols-outlined"
+                                style="font-variation-settings: 'FILL' 1;">star</span>
+                            <span class="material-symbols-outlined"
+                                style="font-variation-settings: 'FILL' 1;">star</span>
+                        </div>
+                        <p class="text-on-surface leading-relaxed italic mb-8">"%VITE_REVIEW_3_TEXT%"</p>
+                        <div class="flex items-center gap-4">
+                            <div
+                                class="w-12 h-12 rounded-full bg-secondary-container flex items-center justify-center font-bold text-primary">
+                                %VITE_REVIEW_3_INIT%</div>
+                            <div>
+                                <h5 class="font-bold text-primary">%VITE_REVIEW_3_NAME%</h5>
+                                <p class="text-xs text-secondary">%VITE_REVIEW_3_ROLE%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Contact & Map Section -->
+        <section id="contact" class="py-24 bg-surface-container-low">
+            <div class="max-w-7xl mx-auto px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+                    <div class="bg-surface-container-lowest p-12 rounded-2xl shadow-sm">
+                        <h2 class="text-3xl font-extrabold text-primary mb-4">Visit Our Office</h2>
+                        <p class="text-secondary mb-10 leading-relaxed">%VITE_CONTACT_INTRO%</p>
+                        <div class="space-y-6 mb-10">
+                            <div class="flex items-start gap-4">
+                                <span class="material-symbols-outlined text-primary mt-1">location_on</span>
+                                <div>
+                                    <p class="font-bold text-primary">Address</p>
+                                    <p class="text-secondary">%VITE_BUSINESS_ADDRESS%</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <span class="material-symbols-outlined text-primary mt-1">call</span>
+                                <div>
+                                    <p class="font-bold text-primary">Phone</p>
+                                    <p class="text-secondary">%VITE_BUSINESS_MOBILE%</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <span class="material-symbols-outlined text-primary mt-1">schedule</span>
+                                <div>
+                                    <p class="font-bold text-primary">Working Hours</p>
+                                    <p class="text-secondary">%VITE_BUSINESS_HOURS%</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col sm:flex-row gap-3">
+                            <a class="flex-1 bg-primary text-white py-4 rounded-xl font-extrabold text-lg flex items-center justify-center gap-2 hover:bg-primary-container transition-all"
+                                href="tel:%VITE_BUSINESS_MOBILE%">
+                                <span class="material-symbols-outlined">call</span>
+                                Call Now
+                            </a>
+                            <a class="flex-1 bg-green-600 text-white py-4 rounded-xl font-extrabold text-lg flex items-center justify-center gap-2 hover:bg-green-700 transition-all"
+                                href="https://wa.me/%VITE_BUSINESS_WHATSAPP%" target="_blank">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.094.541 4.061 1.489 5.775L0 24l6.389-1.456A11.94 11.94 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.793 9.793 0 01-5.009-1.374l-.36-.214-3.732.851.869-3.641-.235-.374A9.786 9.786 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg>
+                                WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                    <div class="rounded-2xl overflow-hidden h-[500px] lg:h-auto shadow-sm border-8 border-white">
+                        <img class="w-full h-full object-cover"
+                            data-alt="Map showing Varun A building on DSK Vishwa Road in the Suburbs area of %VITE_CITY% with local landmarks"
+                            data-location="the Suburbs %VITE_CITY%"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwIi4EvLtYnyrA3F5LLtmKMzBAEuHHoUADam-4vnHvgs8A_-Rj_FB5QXHwGtFfOn9z6lb1fKmTKV0Mc-ZPFllHGrTbcwvH6e_aQ8Zk3ltUqXIRBWUlrXCZOkqcgsl37NsinnR2Cewjrcf_jB5u_MSWHEBaV9fFdB4v7r30lXriw2rR9BHSCECZKWdhrN3eH4RIYzvM-tCston4-vG9VZ-jzo9gJ3wpPQDGProK6z1ptoodAaqRygr_pLD4f0vSiayirUjA57AY35bc" />
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-slate-50 dark:bg-slate-900 w-full py-12 tonal-shift-bg">
+        <div class="max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="space-y-6">
+                <div class="text-lg font-bold text-blue-950 dark:text-white">
+                    %VITE_BUSINESS_NAME%
+                </div>
+                <p class="font-manrope text-sm leading-relaxed text-slate-500 dark:text-slate-400">
+                    © 2026 %VITE_BUSINESS_NAME%. %VITE_FOOTER_COPY%
+                </p>
+                <div class="flex gap-4">
+                    <span class="material-symbols-outlined text-blue-900 cursor-pointer">social_leaderboard</span>
+                    <span class="material-symbols-outlined text-blue-900 cursor-pointer">share</span>
+                    <span class="material-symbols-outlined text-blue-900 cursor-pointer">info</span>
+                </div>
+            </div>
+            <div class="grid grid-cols-2 gap-4">
+                <div class="flex flex-col gap-3">
+                    <h6 class="font-bold text-blue-950 dark:text-blue-300 text-sm mb-2">QUICK LINKS</h6>
+                    <a class="text-slate-500 hover:text-blue-900 dark:text-slate-400 dark:hover:text-blue-300 font-manrope text-sm hover:underline transition-all underline-offset-4"
+                        href="property_listings.html">Properties in Premium Estates</a>
+                    <a class="text-slate-500 hover:text-blue-900 dark:text-slate-400 dark:hover:text-blue-300 font-manrope text-sm hover:underline transition-all underline-offset-4"
+                        href="property_listings.html">Commercial Listings</a>
+                    <a class="text-slate-500 hover:text-blue-900 dark:text-slate-400 dark:hover:text-blue-300 font-manrope text-sm hover:underline transition-all underline-offset-4"
+                        href="property_listings.html">Tech Park Listings</a>
+                </div>
+                <div class="flex flex-col gap-3">
+                    <h6 class="font-bold text-blue-950 dark:text-blue-300 text-sm mb-2">RESOURCES</h6>
+                    <a class="text-slate-500 hover:text-blue-900 dark:text-slate-400 dark:hover:text-blue-300 font-manrope text-sm hover:underline transition-all underline-offset-4"
+                        href="#contact">Contact Agent</a>
+                    <a class="text-slate-500 hover:text-blue-900 dark:text-slate-400 dark:hover:text-blue-300 font-manrope text-sm hover:underline transition-all underline-offset-4"
+                        href="#">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

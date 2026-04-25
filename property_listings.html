@@ -1,0 +1,423 @@
+<!-- Property Listings -->
+<!DOCTYPE html>
+
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary-fixed-dim": "#a9c7ff",
+                        "on-primary": "#ffffff",
+                        "surface-container": "#eceef0",
+                        "surface-bright": "#f7f9fb",
+                        "on-surface-variant": "#43474f",
+                        "outline": "#747780",
+                        "on-primary-container": "#7594ca",
+                        "secondary-fixed-dim": "#b7c8e1",
+                        "secondary-container": "#d0e1fb",
+                        "on-secondary": "#ffffff",
+                        "on-primary-fixed": "#001b3d",
+                        "on-error-container": "#93000a",
+                        "background": "#f7f9fb",
+                        "surface-container-low": "#f2f4f6",
+                        "on-tertiary-fixed": "#2a1803",
+                        "inverse-surface": "#2d3133",
+                        "on-error": "#ffffff",
+                        "on-primary-fixed-variant": "#264778",
+                        "secondary-fixed": "#d3e4fe",
+                        "outline-variant": "#c4c6d0",
+                        "tertiary-fixed": "#ffdcbb",
+                        "surface-container-high": "#e6e8ea",
+                        "inverse-on-surface": "#eff1f3",
+                        "error": "#ba1a1a",
+                        "tertiary-fixed-dim": "#e3c09f",
+                        "surface": "#f7f9fb",
+                        "surface-tint": "#405f91",
+                        "tertiary": "#251401",
+                        "tertiary-container": "#3c2810",
+                        "primary-container": "#002b5b",
+                        "surface-dim": "#d8dadc",
+                        "on-background": "#191c1e",
+                        "error-container": "#ffdad6",
+                        "surface-container-lowest": "#ffffff",
+                        "inverse-primary": "#a9c7ff",
+                        "secondary": "#505f76",
+                        "on-secondary-fixed": "#0b1c30",
+                        "on-tertiary-fixed-variant": "#5a4228",
+                        "on-secondary-fixed-variant": "#38485d",
+                        "surface-variant": "#e0e3e5",
+                        "on-surface": "#191c1e",
+                        "primary-fixed": "#d6e3ff",
+                        "surface-container-highest": "#e0e3e5",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary-container": "#54647a",
+                        "primary": "#001736",
+                        "on-tertiary-container": "#ac8e6f"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Manrope"],
+                        "body": ["Manrope"],
+                        "label": ["Manrope"]
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+
+        .glass-nav {
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+
+        body {
+            font-family: 'Manrope', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-background text-on-background selection:bg-primary-fixed selection:text-on-primary-fixed">
+    <nav
+        class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-950/80 backdrop-blur-xl shadow-[0_20px_40px_rgba(25,28,30,0.06)]">
+        <div
+            class="flex justify-between items-center w-full px-6 py-4 md:px-12 max-w-screen-2xl mx-auto font-manrope antialiased tracking-tight">
+            <div class="text-xl font-bold tracking-tighter text-blue-950 dark:text-white"><a
+                    href="index.html">%VITE_BUSINESS_NAME%</a>
+            </div>
+            <div class="hidden md:flex items-center gap-8">
+                <a class="text-blue-950 dark:text-white border-b-2 border-blue-900 dark:border-blue-400 pb-1"
+                    href="property_listings.html">Properties</a>
+                <a class="text-slate-500 dark:text-slate-400 hover:text-blue-900 dark:hover:text-blue-200 transition-colors"
+                    href="services.html">Services</a>
+                <a class="text-slate-500 dark:text-slate-400 hover:text-blue-900 dark:hover:text-blue-200 transition-colors"
+                    href="about_us.html">About Us</a>
+                <a class="text-slate-500 dark:text-slate-400 hover:text-blue-900 dark:hover:text-blue-200 transition-colors"
+                    href="index.html#contact">Contact</a>
+            </div>
+            <a href="tel:%VITE_BUSINESS_MOBILE%"
+                class="bg-primary-fixed text-on-primary-fixed px-6 py-2.5 rounded-lg font-semibold hover:bg-primary-container hover:text-white transition-all active:scale-[0.98]">
+                Book Viewing
+            </a>
+        </div>
+    </nav>
+    <main class="pt-24 pb-20 px-6 md:px-12 max-w-screen-2xl mx-auto">
+        <header class="mb-12">
+            <div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
+                <div>
+                    <span
+                        class="text-[0.75rem] font-bold tracking-[0.05em] uppercase text-on-secondary-container mb-2 block">Premium
+                        Real Estate</span>
+                    <h1 class="text-4xl md:text-5xl font-extrabold text-primary tracking-tight">Curation of %VITE_CITY%
+                        Homes
+                    </h1>
+                </div>
+                <div class="flex items-center gap-3 bg-surface-container-low p-1.5 rounded-xl self-start md:self-auto">
+                    <button class="px-6 py-2 bg-white text-primary font-bold rounded-lg shadow-sm">Residential</button>
+                    <button
+                        class="px-6 py-2 text-on-surface-variant font-medium hover:bg-white/50 transition-all rounded-lg">Commercial</button>
+                </div>
+            </div>
+        </header>
+        <section class="mb-12 bg-surface-container-low p-6 md:p-8 rounded-xl">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                <div class="space-y-2">
+                    <label
+                        class="text-[0.75rem] font-bold text-on-surface-variant uppercase tracking-wider ml-1">Location</label>
+                    <div class="relative">
+                        <select
+                            class="w-full bg-surface-container-lowest border-none rounded-lg py-3.5 pl-4 pr-10 focus:ring-2 focus:ring-primary/20 appearance-none text-primary font-medium">
+                            <option>All %VITE_CITY% Districts</option>
+                            <option>the Suburbs</option>
+                            <option>Downtown</option>
+                            <option>Premium Estates</option>
+                            <option>Baner</option>
+                        </select>
+                        <span
+                            class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-outline pointer-events-none"
+                            data-icon="expand_more">expand_more</span>
+                    </div>
+                </div>
+                <div class="space-y-2">
+                    <label class="text-[0.75rem] font-bold text-on-surface-variant uppercase tracking-wider ml-1">Budget
+                        Range</label>
+                    <div class="relative">
+                        <select
+                            class="w-full bg-surface-container-lowest border-none rounded-lg py-3.5 pl-4 pr-10 focus:ring-2 focus:ring-primary/20 appearance-none text-primary font-medium">
+                            <option>Any Price</option>
+                            <option>₹50L - ₹1Cr</option>
+                            <option>₹1Cr - ₹2.5Cr</option>
+                            <option>₹2.5Cr+</option>
+                        </select>
+                        <span
+                            class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-outline pointer-events-none"
+                            data-icon="payments">payments</span>
+                    </div>
+                </div>
+                <div class="space-y-2">
+                    <label
+                        class="text-[0.75rem] font-bold text-on-surface-variant uppercase tracking-wider ml-1">Configuration</label>
+                    <div class="relative">
+                        <select
+                            class="w-full bg-surface-container-lowest border-none rounded-lg py-3.5 pl-4 pr-10 focus:ring-2 focus:ring-primary/20 appearance-none text-primary font-medium">
+                            <option>BHK Type</option>
+                            <option>2 BHK</option>
+                            <option>3 BHK</option>
+                            <option>4 BHK+</option>
+                        </select>
+                        <span
+                            class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-outline pointer-events-none"
+                            data-icon="bedroom_parent">bedroom_parent</span>
+                    </div>
+                </div>
+                <div class="flex items-end">
+                    <button
+                        class="w-full bg-primary-container text-white py-3.5 rounded-lg font-bold flex items-center justify-center gap-2 hover:translate-y-[-2px] transition-all duration-300">
+                        <span class="material-symbols-outlined" data-icon="search">search</span>
+                        Apply Filters
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section class="flex justify-between items-center mb-8">
+            <p class="text-on-surface-variant font-medium">Found <span class="text-primary font-bold">128</span>
+                Properties</p>
+            <div class="flex items-center gap-4">
+                <span class="text-sm text-on-surface-variant hidden md:block">Sort by:</span>
+                <select class="bg-transparent border-none text-primary font-bold focus:ring-0 cursor-pointer">
+                    <option>Price: High to Low</option>
+                    <option>Price: Low to High</option>
+                    <option>Newest Listed</option>
+                </select>
+            </div>
+        </section>
+        <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+            <div class="bg-surface-container-lowest rounded-xl overflow-hidden transition-all duration-300 group">
+                <div class="relative aspect-[16/10] overflow-hidden">
+                    <img alt="Luxury Apartment"
+                        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                        data-alt="Modern minimalist luxury penthouse interior with floor to ceiling windows overlooking the %VITE_CITY% city skyline at dusk with warm ambient lighting"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuBSQB5SVhbhlzYhREcXpkrvsK_UMKbCTBfE5bmHPtujjeOGhCbJOosydSWX9BWrsM3SVmofqZGmwIUD0Sl2WKErI2e4MeAFLc9bzej4wxVZHzvJcgtQZVzGV5-Li7SeHYkOF3PM-vB9km75wwtc3biolNgtDNcZyas41p-vl0ZbYgE_h4U6uWvwTGp1iWdILLyULTi6klbhc7gsfcuuNkZV4XWQuMWKVasuZWqsCpfcv6E2Klb9pHT2E9021e4Lnnv3ScB2luhlN--9" />
+                    <div
+                        class="absolute top-4 left-4 bg-white/90 backdrop-blur-md px-3 py-1 rounded-full flex items-center gap-1.5 shadow-sm">
+                        <span class="w-2 h-2 rounded-full bg-green-500"></span>
+                        <span
+                            class="text-[0.7rem] font-extrabold uppercase text-primary tracking-wider">Available</span>
+                    </div>
+                </div>
+                <div class="p-8">
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <h3 class="text-xl font-bold text-primary mb-1">The Azure Residency</h3>
+                            <div class="flex items-center text-on-surface-variant gap-1">
+                                <span class="material-symbols-outlined text-sm"
+                                    data-icon="location_on">location_on</span>
+                                <span class="text-sm font-medium">Downtown, %VITE_CITY%</span>
+                            </div>
+                        </div>
+                        <div class="text-right">
+                            <span class="text-2xl font-black text-primary tracking-tighter">₹2.4 Cr</span>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-3 border-y border-outline-variant/20 py-4 mb-6">
+                        <div class="flex flex-col items-center border-r border-outline-variant/20">
+                            <span class="material-symbols-outlined text-on-secondary-container mb-1"
+                                data-icon="bed">bed</span>
+                            <span class="text-sm font-bold text-primary">3 BHK</span>
+                        </div>
+                        <div class="flex flex-col items-center border-r border-outline-variant/20">
+                            <span class="material-symbols-outlined text-on-secondary-container mb-1"
+                                data-icon="bathtub">bathtub</span>
+                            <span class="text-sm font-bold text-primary">3 Bath</span>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <span class="material-symbols-outlined text-on-secondary-container mb-1"
+                                data-icon="straighten">straighten</span>
+                            <span class="text-sm font-bold text-primary">1850 ft²</span>
+                        </div>
+                    </div>
+                    <a href="property_details.html"
+                        class="w-full border border-outline-variant/40 py-3 rounded-lg text-primary font-bold hover:bg-primary-fixed-dim hover:border-primary-fixed-dim transition-colors flex items-center justify-center gap-2">
+                        View Details
+                        <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+                    </a>
+                </div>
+            </div>
+            <div class="bg-surface-container-lowest rounded-xl overflow-hidden transition-all duration-300 group">
+                <div class="relative aspect-[16/10] overflow-hidden">
+                    <img alt="Modern Villa"
+                        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                        data-alt="Contemporary white villa architecture with lush tropical garden landscaping in an upscale %VITE_CITY% residential neighborhood under clear blue skies"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwh-xFozkzwSU22IDl5LFOpWhXhLpDLYh6KjITgoMqfxzSbqqMf4c5BUS9SbD9ltM4rnsOzpreD9K1Ok4CfZCawnDSHqzDWbV2UG65wL5MzrNOjFEE2J4QMl9I7uvZdDP6ODidqSsAp60VuySdJFhSNG0E61sg-9mJYcBdBs4Iaed0BoGc-y7wkPMBixg4MJ21ymyru7B4aNb-jOkNRoopng7p1rnIE_0RnNOAYmrW4FqqbtHqBlkLu_oQ7FPo3OgpJCfreIBSvP_L" />
+                    <div
+                        class="absolute top-4 left-4 bg-white/90 backdrop-blur-md px-3 py-1 rounded-full flex items-center gap-1.5 shadow-sm">
+                        <span class="w-2 h-2 rounded-full bg-blue-500"></span>
+                        <span class="text-[0.7rem] font-extrabold uppercase text-primary tracking-wider">Newly
+                            Added</span>
+                    </div>
+                </div>
+                <div class="p-8">
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <h3 class="text-xl font-bold text-primary mb-1">Emerald Estate</h3>
+                            <div class="flex items-center text-on-surface-variant gap-1">
+                                <span class="material-symbols-outlined text-sm"
+                                    data-icon="location_on">location_on</span>
+                                <span class="text-sm font-medium">the Suburbs, %VITE_CITY%</span>
+                            </div>
+                        </div>
+                        <div class="text-right">
+                            <span class="text-2xl font-black text-primary tracking-tighter">₹1.1 Cr</span>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-3 border-y border-outline-variant/20 py-4 mb-6">
+                        <div class="flex flex-col items-center border-r border-outline-variant/20">
+                            <span class="material-symbols-outlined text-on-secondary-container mb-1"
+                                data-icon="bed">bed</span>
+                            <span class="text-sm font-bold text-primary">2 BHK</span>
+                        </div>
+                        <div class="flex flex-col items-center border-r border-outline-variant/20">
+                            <span class="material-symbols-outlined text-on-secondary-container mb-1"
+                                data-icon="bathtub">bathtub</span>
+                            <span class="text-sm font-bold text-primary">2 Bath</span>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <span class="material-symbols-outlined text-on-secondary-container mb-1"
+                                data-icon="straighten">straighten</span>
+                            <span class="text-sm font-bold text-primary">1240 ft²</span>
+                        </div>
+                    </div>
+                    <a href="property_details.html"
+                        class="w-full border border-outline-variant/40 py-3 rounded-lg text-primary font-bold hover:bg-primary-fixed-dim hover:border-primary-fixed-dim transition-colors flex items-center justify-center gap-2">
+                        View Details
+                        <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+                    </a>
+                </div>
+            </div>
+            <div class="bg-surface-container-lowest rounded-xl overflow-hidden transition-all duration-300 group">
+                <div class="relative aspect-[16/10] overflow-hidden">
+                    <img alt="Executive Flat"
+                        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                        data-alt="Elegant master bedroom in a high-end apartment featuring warm wooden textures, plush grey bedding, and sophisticated layered lighting"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDTH-qWBcOt1B_zjOxj7ghGGMIwBFUsaaL_i5irATs2z_Gu52dGkanyOu7TZEqw2MCEMf5Jyd4O9eIhIXKAnvC4Xosy7_f4I9aVeCt1zp2XNdXj9VSNBF1da6ORmVkzmIk70e8AdJIBKPvYM4VCYouzdvaYzRBHhLXaJ-jTJV-JY7UtEUXq0uTaVhC8WX0YT1MJf0edRkipZVIOq7cPLAmEyx64_EiN4P3PwBM7PvsNSW20lK8F21fyFMmYpL2Y_9KvyEJU6KNKmvq3" />
+                    <div
+                        class="absolute top-4 left-4 bg-primary-container text-white px-3 py-1 rounded-full flex items-center gap-1.5 shadow-sm">
+                        <span class="text-[0.7rem] font-extrabold uppercase tracking-wider">Premium Listing</span>
+                    </div>
+                </div>
+                <div class="p-8">
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <h3 class="text-xl font-bold text-primary mb-1">Skyline View Suites</h3>
+                            <div class="flex items-center text-on-surface-variant gap-1">
+                                <span class="material-symbols-outlined text-sm"
+                                    data-icon="location_on">location_on</span>
+                                <span class="text-sm font-medium">Baner, %VITE_CITY%</span>
+                            </div>
+                        </div>
+                        <div class="text-right">
+                            <span class="text-2xl font-black text-primary tracking-tighter">₹3.8 Cr</span>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-3 border-y border-outline-variant/20 py-4 mb-6">
+                        <div class="flex flex-col items-center border-r border-outline-variant/20">
+                            <span class="material-symbols-outlined text-on-secondary-container mb-1"
+                                data-icon="bed">bed</span>
+                            <span class="text-sm font-bold text-primary">4 BHK</span>
+                        </div>
+                        <div class="flex flex-col items-center border-r border-outline-variant/20">
+                            <span class="material-symbols-outlined text-on-secondary-container mb-1"
+                                data-icon="bathtub">bathtub</span>
+                            <span class="text-sm font-bold text-primary">4 Bath</span>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <span class="material-symbols-outlined text-on-secondary-container mb-1"
+                                data-icon="straighten">straighten</span>
+                            <span class="text-sm font-bold text-primary">2600 ft²</span>
+                        </div>
+                    </div>
+                    <a href="property_details.html"
+                        class="w-full border border-outline-variant/40 py-3 rounded-lg text-primary font-bold hover:bg-primary-fixed-dim hover:border-primary-fixed-dim transition-colors flex items-center justify-center gap-2">
+                        View Details
+                        <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="mt-20 flex justify-center items-center gap-3">
+            <button
+                class="w-12 h-12 flex items-center justify-center rounded-lg border border-outline-variant/40 text-primary hover:bg-surface-container-low transition-all">
+                <span class="material-symbols-outlined" data-icon="chevron_left">chevron_left</span>
+            </button>
+            <button
+                class="w-12 h-12 flex items-center justify-center rounded-lg bg-primary text-white font-bold">1</button>
+            <button
+                class="w-12 h-12 flex items-center justify-center rounded-lg text-primary font-bold hover:bg-surface-container-low transition-all">2</button>
+            <button
+                class="w-12 h-12 flex items-center justify-center rounded-lg text-primary font-bold hover:bg-surface-container-low transition-all">3</button>
+            <span class="mx-2 text-outline">...</span>
+            <button
+                class="w-12 h-12 flex items-center justify-center rounded-lg text-primary font-bold hover:bg-surface-container-low transition-all">12</button>
+            <button
+                class="w-12 h-12 flex items-center justify-center rounded-lg border border-outline-variant/40 text-primary hover:bg-surface-container-low transition-all">
+                <span class="material-symbols-outlined" data-icon="chevron_right">chevron_right</span>
+            </button>
+        </section>
+    </main>
+    <footer class="bg-slate-50 dark:bg-slate-900 w-full py-16 mt-20">
+        <div class="max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-2 gap-12 font-manrope text-sm leading-relaxed">
+            <div class="space-y-6">
+                <div class="text-lg font-extrabold text-blue-950 dark:text-white">%VITE_BUSINESS_NAME%</div>
+                <p class="max-w-md text-slate-500 dark:text-slate-400">
+                    %VITE_FOOTER_TAGLINE%. Specializing in property acquisitions for the
+                    discerning investor.
+                </p>
+                <p class="text-slate-500 dark:text-slate-400">© 2026 %VITE_BUSINESS_NAME%. Architectural Curator
+                    of %VITE_CITY% Real Estate.</p>
+            </div>
+            <div class="grid grid-cols-2 gap-8">
+                <div class="space-y-4">
+                    <h4 class="font-bold text-blue-950 dark:text-blue-200 uppercase tracking-widest text-xs">Navigation
+                    </h4>
+                    <nav class="flex flex-col gap-3">
+                        <a class="text-slate-500 dark:text-slate-400 hover:text-blue-700 dark:hover:text-blue-300 underline-offset-4 hover:underline transition-opacity"
+                            href="#">Area Guide</a>
+                        <a class="text-slate-500 dark:text-slate-400 hover:text-blue-700 dark:hover:text-blue-300 underline-offset-4 hover:underline transition-opacity"
+                            href="#">Consultancy</a>
+                    </nav>
+                </div>
+                <div class="space-y-4">
+                    <h4 class="font-bold text-blue-950 dark:text-blue-200 uppercase tracking-widest text-xs">Legal</h4>
+                    <nav class="flex flex-col gap-3">
+                        <a class="text-slate-500 dark:text-slate-400 hover:text-blue-700 dark:hover:text-blue-300 underline-offset-4 hover:underline transition-opacity"
+                            href="#">Privacy Policy</a>
+                        <a class="text-slate-500 dark:text-slate-400 hover:text-blue-700 dark:hover:text-blue-300 underline-offset-4 hover:underline transition-opacity"
+                            href="#">Terms of Service</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

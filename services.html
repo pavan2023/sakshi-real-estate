@@ -1,0 +1,445 @@
+<!-- Properties Listing -->
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Services &amp; Investment Guide | %VITE_BUSINESS_NAME%</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary-fixed-dim": "#a9c7ff",
+                        "on-primary": "#ffffff",
+                        "surface-container": "#eceef0",
+                        "surface-bright": "#f7f9fb",
+                        "on-surface-variant": "#43474f",
+                        "outline": "#747780",
+                        "on-primary-container": "#7594ca",
+                        "secondary-fixed-dim": "#b7c8e1",
+                        "secondary-container": "#d0e1fb",
+                        "on-secondary": "#ffffff",
+                        "on-primary-fixed": "#001b3d",
+                        "on-error-container": "#93000a",
+                        "background": "#f7f9fb",
+                        "surface-container-low": "#f2f4f6",
+                        "on-tertiary-fixed": "#2a1803",
+                        "inverse-surface": "#2d3133",
+                        "on-error": "#ffffff",
+                        "on-primary-fixed-variant": "#264778",
+                        "secondary-fixed": "#d3e4fe",
+                        "outline-variant": "#c4c6d0",
+                        "tertiary-fixed": "#ffdcbb",
+                        "surface-container-high": "#e6e8ea",
+                        "inverse-on-surface": "#eff1f3",
+                        "error": "#ba1a1a",
+                        "tertiary-fixed-dim": "#e3c09f",
+                        "surface": "#f7f9fb",
+                        "surface-tint": "#405f91",
+                        "tertiary": "#251401",
+                        "tertiary-container": "#3c2810",
+                        "primary-container": "#002b5b",
+                        "surface-dim": "#d8dadc",
+                        "on-background": "#191c1e",
+                        "error-container": "#ffdad6",
+                        "surface-container-lowest": "#ffffff",
+                        "inverse-primary": "#a9c7ff",
+                        "secondary": "#505f76",
+                        "on-secondary-fixed": "#0b1c30",
+                        "on-tertiary-fixed-variant": "#5a4228",
+                        "on-secondary-fixed-variant": "#38485d",
+                        "surface-variant": "#e0e3e5",
+                        "on-surface": "#191c1e",
+                        "primary-fixed": "#d6e3ff",
+                        "surface-container-highest": "#e0e3e5",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary-container": "#54647a",
+                        "primary": "#001736",
+                        "on-tertiary-container": "#ac8e6f"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Manrope"],
+                        "body": ["Manrope"],
+                        "label": ["Manrope"]
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Manrope', sans-serif;
+        }
+
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+
+        .glass-nav {
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+    </style>
+</head>
+
+<body class="bg-background text-on-background selection:bg-primary-fixed selection:text-on-primary-fixed">
+    <!-- TopNavBar -->
+    <nav
+        class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-950/80 glass-nav shadow-[0_20px_40px_rgba(25,28,30,0.06)] font-manrope antialiased tracking-tight">
+        <div class="flex justify-between items-center w-full px-6 py-4 md:px-12 max-w-screen-2xl mx-auto">
+            <div class="text-xl font-bold tracking-tighter text-blue-950 dark:text-white">
+                <a href="index.html">%VITE_BUSINESS_NAME%</a>
+            </div>
+            <div class="hidden md:flex items-center space-x-8">
+                <a class="text-slate-500 dark:text-slate-400 hover:text-blue-900 dark:hover:text-blue-200 transition-colors"
+                    href="property_listings.html">Properties</a>
+                <a class="text-blue-950 dark:text-white border-b-2 border-blue-900 dark:border-blue-400 pb-1"
+                    href="services.html">Services</a>
+                <a class="text-slate-500 dark:text-slate-400 hover:text-blue-900 dark:hover:text-blue-200 transition-colors"
+                    href="about_us.html">About Us</a>
+                <a class="text-slate-500 dark:text-slate-400 hover:text-blue-900 dark:hover:text-blue-200 transition-colors"
+                    href="index.html#contact">Contact</a>
+            </div>
+            <a href="tel:%VITE_BUSINESS_MOBILE%"
+                class="bg-primary-fixed text-on-primary-fixed px-6 py-2.5 rounded-lg font-semibold hover:bg-primary-container hover:text-white active:scale-[0.98] transition-all duration-300">
+                Book Viewing
+            </a>
+        </div>
+    </nav>
+    <main class="pt-24">
+        <!-- Hero Section -->
+        <section class="relative px-6 md:px-12 py-20 lg:py-32 overflow-hidden bg-surface-container-low">
+            <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <span class="text-xs font-bold tracking-[0.2em] uppercase text-primary mb-4 block">Architectural
+                        Curator</span>
+                    <h1 class="text-5xl lg:text-7xl font-extrabold text-primary tracking-tighter leading-[1.1] mb-8">
+                        Elevated Real Estate <br />Intelligence in %VITE_CITY%
+                    </h1>
+                    <p class="text-lg text-secondary leading-relaxed max-w-lg mb-10">
+                        For over 15 years, we have served as the silent force behind the region's most significant
+                        residential
+                        acquisitions and portfolio management.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <div class="bg-surface-container-lowest px-6 py-4 rounded-xl shadow-sm">
+                            <span class="block text-3xl font-bold text-primary">15+</span>
+                            <span class="text-sm font-medium text-secondary">Years of Trust</span>
+                        </div>
+                        <div class="bg-surface-container-lowest px-6 py-4 rounded-xl shadow-sm">
+                            <span class="block text-3xl font-bold text-primary">₹500Cr+</span>
+                            <span class="text-sm font-medium text-secondary">Assets Managed</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="rounded-2xl overflow-hidden aspect-[4/5] shadow-2xl">
+                        <img class="w-full h-full object-cover"
+                            data-alt="Modern minimalist luxury villa in %VITE_CITY% with expansive glass walls, lush landscaped garden, and warm architectural lighting during twilight"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDoqecb_CstT7cvAa5sivnTDij7GNTyFmg69EqrmwX63LdtwscZsEeJjv4LLkih_pAWpsDVnnUIaiSwQS5voZWqFHVjRE-2n8umHOLREfBIS_PuA62aXjoydc8oki48OzMbQLX8FuJnDmsBwvqrG3eV4AvvtFkHPLcX1KcTE8LA6KH0CGMypc0IHc6Ugz4wQyGb2iPEkFMklL7LCEFdBgTH45qScCWPQ1W8qMVP4U-s3BYM0gPMetEuSswnO88Cn0_s6zythbr8BLGF" />
+                    </div>
+                    <div
+                        class="absolute -bottom-8 -left-8 bg-primary p-8 rounded-xl text-white hidden md:block max-w-[240px]">
+                        <span class="material-symbols-outlined text-4xl mb-4"
+                            data-icon="verified_user">verified_user</span>
+                        <p class="text-sm font-medium leading-relaxed">Recognized as the premier consultancy for Deccan
+                            and Premium Estates premium holdings.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Services Bento Grid -->
+        <section class="py-24 px-6 md:px-12 max-w-7xl mx-auto">
+            <div class="mb-16">
+                <h2 class="text-3xl font-bold text-primary mb-4">Core Competencies</h2>
+                <div class="h-1 w-20 bg-primary"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Residential Sales -->
+                <div
+                    class="md:col-span-2 bg-surface-container-lowest p-10 rounded-2xl flex flex-col justify-between group hover:bg-white transition-all duration-500">
+                    <div>
+                        <div class="flex justify-between items-start mb-12">
+                            <span class="material-symbols-outlined text-4xl text-primary"
+                                data-icon="home_work">home_work</span>
+                            <span
+                                class="text-[10px] font-bold tracking-widest uppercase py-1 px-3 bg-secondary-container text-on-secondary-container rounded-full">Primary
+                                Service</span>
+                        </div>
+                        <h3 class="text-3xl font-bold text-primary mb-6">Residential Sales</h3>
+                        <p class="text-secondary leading-relaxed mb-8 max-w-md">
+                            Specializing in the acquisition of high-yield residential assets. We curate a selection of
+                            the region's most exclusive properties, from Deccan bungalows to contemporary Viman Nagar
+                            penthouses.
+                        </p>
+                        <ul class="space-y-3 mb-10">
+                            <li class="flex items-center text-sm font-medium text-on-surface">
+                                <span class="material-symbols-outlined text-primary text-xl mr-3"
+                                    data-icon="check_circle">check_circle</span>
+                                Market Valuation &amp; Comparative Analysis
+                            </li>
+                            <li class="flex items-center text-sm font-medium text-on-surface">
+                                <span class="material-symbols-outlined text-primary text-xl mr-3"
+                                    data-icon="check_circle">check_circle</span>
+                                Title Verification &amp; Legal Liaison
+                            </li>
+                            <li class="flex items-center text-sm font-medium text-on-surface">
+                                <span class="material-symbols-outlined text-primary text-xl mr-3"
+                                    data-icon="check_circle">check_circle</span>
+                                Personalized Site Curation
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="property_listings.html" class="text-primary font-bold flex items-center group-hover:gap-4 transition-all gap-2">
+                        Explore Portfolio <span class="material-symbols-outlined"
+                            data-icon="arrow_forward">arrow_forward</span>
+                    </a>
+                </div>
+                <!-- Rental Management -->
+                <div class="bg-primary p-10 rounded-2xl text-white flex flex-col justify-between">
+                    <div>
+                        <span class="material-symbols-outlined text-4xl text-primary-fixed-dim mb-12"
+                            data-icon="key">key</span>
+                        <h3 class="text-2xl font-bold mb-6">Rental Management</h3>
+                        <p class="text-primary-fixed-dim/80 text-sm leading-relaxed mb-8">
+                            End-to-end passive income solutions for property owners. We handle everything from tenant
+                            vetting to legal agreements.
+                        </p>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="flex items-center py-3 border-b border-white/10">
+                            <span class="text-xs font-bold mr-4">01</span>
+                            <span class="text-sm">Premium Tenant Selection</span>
+                        </div>
+                        <div class="flex items-center py-3 border-b border-white/10">
+                            <span class="text-xs font-bold mr-4">02</span>
+                            <span class="text-sm">Maintenance Oversight</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Investment Consulting -->
+                <div
+                    class="md:col-span-3 bg-surface-container-low p-10 rounded-2xl grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h3 class="text-3xl font-bold text-primary mb-6">Investment Consulting</h3>
+                        <p class="text-secondary leading-relaxed mb-8">
+                            Our proprietary data-driven approach identifies the region's high-growth corridors before
+                            they hit
+                            the mainstream. We offer strategic advice on portfolio diversification and capital
+                            appreciation.
+                        </p>
+                        <div class="grid grid-cols-2 gap-6">
+                            <div class="bg-white p-4 rounded-lg">
+                                <p class="text-xs font-bold text-slate-400 mb-1">AVERAGE ROI</p>
+                                <p class="text-xl font-bold text-primary">8.4% Annually</p>
+                            </div>
+                            <div class="bg-white p-4 rounded-lg">
+                                <p class="text-xs font-bold text-slate-400 mb-1">MARKET DATA</p>
+                                <p class="text-xl font-bold text-primary">Real-time Intel</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rounded-xl overflow-hidden h-64 shadow-lg">
+                        <img class="w-full h-full object-cover"
+                            data-alt="Professional workspace with architectural blueprints and digital financial charts on a high-resolution screen, clean and corporate aesthetic"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCO28L0KOL6MeOa_ziBFckyKYVZwjNSJuDwse80Gsm3zFpe4f7mOXwvBi-UytU9D0bng8QLL18sQhISw2MMmQIzKhX7nnCxD9yRLOTMtQgcMrhO3SCbcFkairXkPNolw2aeWqubKbeNcrO4X4ZmP_gdWlwNGvvEs6sALGsx7dQyaO6P2fuBgsbL2vgbd1bw5A0j6ENqCfnMf2dfz77GRn6fBpck4VUSIfOWhNZnhsvX3VsxK-IpXCXJK1TCRLIBApyldlt-to0gIZjn" />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Process Flow -->
+        <section class="py-24 bg-surface-container-lowest px-6 md:px-12">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center mb-20">
+                    <h2 class="text-4xl font-bold text-primary mb-6">The Curator's Journey</h2>
+                    <p class="text-secondary max-w-2xl mx-auto">A systematic, transparent process designed to provide
+                        peace of mind and precision in every transaction.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-12 relative">
+                    <!-- Progress Line (Desktop) -->
+                    <div class="hidden md:block absolute top-12 left-0 w-full h-[2px] bg-slate-100 z-0"></div>
+                    <!-- Step 1 -->
+                    <div class="relative z-10 text-center">
+                        <div
+                            class="w-24 h-24 bg-white rounded-full flex items-center justify-center mx-auto mb-8 shadow-xl border-4 border-background">
+                            <span class="material-symbols-outlined text-primary text-3xl" data-icon="forum">forum</span>
+                        </div>
+                        <h4 class="text-lg font-bold text-primary mb-3">Consultation</h4>
+                        <p class="text-sm text-secondary leading-relaxed px-4">Deep dive into your lifestyle needs or
+                            investment goals.</p>
+                    </div>
+                    <!-- Step 2 -->
+                    <div class="relative z-10 text-center">
+                        <div
+                            class="w-24 h-24 bg-white rounded-full flex items-center justify-center mx-auto mb-8 shadow-xl border-4 border-background">
+                            <span class="material-symbols-outlined text-primary text-3xl"
+                                data-icon="travel_explore">travel_explore</span>
+                        </div>
+                        <h4 class="text-lg font-bold text-primary mb-3">Curated Shortlist</h4>
+                        <p class="text-sm text-secondary leading-relaxed px-4">Bespoke selection of properties that pass
+                            our 50-point audit.</p>
+                    </div>
+                    <!-- Step 3 -->
+                    <div class="relative z-10 text-center">
+                        <div
+                            class="w-24 h-24 bg-white rounded-full flex items-center justify-center mx-auto mb-8 shadow-xl border-4 border-background">
+                            <span class="material-symbols-outlined text-primary text-3xl" data-icon="gavel">gavel</span>
+                        </div>
+                        <h4 class="text-lg font-bold text-primary mb-3">Due Diligence</h4>
+                        <p class="text-sm text-secondary leading-relaxed px-4">Rigorous legal verification and
+                            structural assessment.</p>
+                    </div>
+                    <!-- Step 4 -->
+                    <div class="relative z-10 text-center">
+                        <div
+                            class="w-24 h-24 bg-white rounded-full flex items-center justify-center mx-auto mb-8 shadow-xl border-4 border-background">
+                            <span class="material-symbols-outlined text-primary text-3xl"
+                                data-icon="ink_pen">ink_pen</span>
+                        </div>
+                        <h4 class="text-lg font-bold text-primary mb-3">Closure</h4>
+                        <p class="text-sm text-secondary leading-relaxed px-4">Seamless execution of documentation and
+                            handover.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Investment Insights -->
+        <section class="py-24 px-6 md:px-12 max-w-7xl mx-auto">
+            <div class="flex flex-col lg:flex-row gap-16 items-center">
+                <div class="lg:w-1/2">
+                    <span class="text-primary font-bold tracking-widest text-xs uppercase mb-4 block">Market
+                        Pulse</span>
+                    <h2 class="text-4xl font-extrabold text-primary mb-8 tracking-tighter">%VITE_CITY% Market Outlook 2026
+                    </h2>
+                    <div class="space-y-6">
+                        <div class="bg-surface-container-low p-6 rounded-xl border-l-4 border-primary">
+                            <h5 class="font-bold text-primary mb-2">Growth Hotspots</h5>
+                            <p class="text-sm text-secondary">The Balewadi High Street extension and the
+                                Commercial-Shivajinagar Metro corridor are projected for a 12% capital appreciation.</p>
+                        </div>
+                        <div class="bg-surface-container-low p-6 rounded-xl border-l-4 border-primary">
+                            <h5 class="font-bold text-primary mb-2">Commercial Synergy</h5>
+                            <p class="text-sm text-secondary">Proximity to Tier-1 IT parks remains the strongest driver
+                                for rental yield stability in %VITE_CITY%.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/2 grid grid-cols-2 gap-4">
+                    <div class="space-y-4">
+                        <div class="rounded-xl overflow-hidden shadow-lg">
+                            <img class="w-full h-40 object-cover"
+                                data-alt="Wide shot of %VITE_CITY% city skyline during sunset with modern skyscrapers and glowing city lights"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDY8_6L9x0ySBkXFjrU-eJ2Wo77POUu-4_Z0mdy7JcbaSlS-EOQHcv6BTx3205oPuuZsxwcrv0gk_OIgshtIOLiBDPSamJa3-BwXpLuNP5BVJ3JFy-WpxlE_zjRibU2Vwj7kWBsIdYEW6H1OD3WPPp2iSvZFSdcIb26IqE--jTcbl0SUD4zDdU1m9gT6zVMHRuM3i_wkQJh7YBDUUj-8tCB5lGCIRBbI9Nkqe_59OlIr6CQS5bhCZYfEuc2GRPxsC-uuNWs1C5e5N8r" />
+                        </div>
+                        <div class="bg-primary-container text-white p-6 rounded-xl">
+                            <p class="text-3xl font-bold mb-2">98%</p>
+                            <p class="text-xs uppercase tracking-widest font-medium opacity-70">Client Retention Rate
+                            </p>
+                        </div>
+                    </div>
+                    <div class="pt-8 space-y-4">
+                        <div class="bg-secondary-container p-6 rounded-xl">
+                            <p class="text-3xl font-bold text-primary mb-2">1,200+</p>
+                            <p class="text-xs uppercase tracking-widest font-medium text-secondary">Deals Closed</p>
+                        </div>
+                        <div class="rounded-xl overflow-hidden shadow-lg">
+                            <img class="w-full h-40 object-cover"
+                                data-alt="Luxurious corporate office lobby in %VITE_CITY% featuring marble floors and high-end modern furniture"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6NdalryxGxbtZ3NF1vJzw3NjYLgrla54R7yiGK1kc33rq_myEklSzcPcSIBK0ay0s-P2AQvyo2rPG9RwqeH5x6_0l4a5L6VyhhmYPNMKKkd05HmZX_9eNhdYkYX82RafYPqw6zpRsuDfge2IXFww4bb3EOHFiPXSrVkGPLtmjSdq2MsBUu4lXRNyNKP-BpCxY7IpT4ZNwocYQm37xmToT4IBQMxFt7Wi6fcxYI2hR5zzf141ZwUu92DLfWRTS-I_erjj4-UK48-o_" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- CTA Section -->
+        <section class="mb-24 px-6 md:px-12 max-w-5xl mx-auto">
+            <div class="bg-primary rounded-2xl p-12 lg:p-20 text-center relative overflow-hidden">
+                <div class="relative z-10">
+                    <h2 class="text-3xl md:text-5xl font-bold text-white mb-8 tracking-tight">Ready to start your
+                        
+                        <br class="hidden md:block" /> property legacy?
+                    </h2>
+                    <p class="text-primary-fixed-dim max-w-xl mx-auto mb-12 text-lg">Schedule a private consultation
+                        with our experts to discuss your requirements in absolute confidence.</p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <a href="tel:%VITE_BUSINESS_MOBILE%"
+                            class="bg-white text-primary px-10 py-4 rounded-lg font-bold hover:bg-primary-fixed transition-colors">Request
+                            a Callback</a>
+                        <a href="property_listings.html"
+                            class="bg-transparent border border-white/30 text-white px-10 py-4 rounded-lg font-bold hover:bg-white/10 transition-colors">Download
+                            Area Guide</a>
+                    </div>
+                </div>
+                <!-- Decorative element -->
+                <div class="absolute -bottom-16 -right-16 w-64 h-64 bg-white/5 rounded-full blur-3xl"></div>
+                <div class="absolute -top-16 -left-16 w-64 h-64 bg-white/5 rounded-full blur-3xl"></div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer
+        class="bg-slate-50 dark:bg-slate-900 w-full py-16 font-manrope text-sm leading-relaxed border-t border-slate-100">
+        <div class="max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div>
+                <div class="text-lg font-extrabold text-blue-950 dark:text-white mb-6">
+                    %VITE_BUSINESS_NAME%
+                </div>
+                <p class="text-slate-500 dark:text-slate-400 max-w-sm mb-8">
+                    the region's leading architectural curators, providing expert guidance for high-end residential and
+                    commercial investments across the city's most prestigious pin codes.
+                </p>
+                <div class="flex gap-4">
+                    <span class="material-symbols-outlined text-blue-950 cursor-pointer"
+                        data-icon="language">language</span>
+                    <span class="material-symbols-outlined text-blue-950 cursor-pointer" data-icon="mail">mail</span>
+                </div>
+            </div>
+            <div class="grid grid-cols-2 gap-8">
+                <div>
+                    <h4 class="font-bold text-blue-950 dark:text-blue-100 mb-4">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a class="text-slate-500 dark:text-slate-400 hover:text-blue-700 dark:hover:text-blue-300 underline-offset-4 hover:underline"
+                                href="#">Privacy Policy</a></li>
+                        <li><a class="text-slate-500 dark:text-slate-400 hover:text-blue-700 dark:hover:text-blue-300 underline-offset-4 hover:underline"
+                                href="#">Terms of Service</a></li>
+                        <li><a class="text-slate-500 dark:text-slate-400 hover:text-blue-700 dark:hover:text-blue-300 underline-offset-4 hover:underline"
+                                href="#">Area Guide</a></li>
+                        <li><a class="text-slate-500 dark:text-slate-400 hover:text-blue-700 dark:hover:text-blue-300 underline-offset-4 hover:underline"
+                                href="#">Consultancy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-blue-950 dark:text-blue-100 mb-4">Contact</h4>
+                    <p class="text-slate-500 dark:text-slate-400">
+                        %VITE_BUSINESS_ADDRESS%
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-8 mt-16 pt-8 border-t border-slate-200/50">
+            <p class="text-slate-400 text-xs">© 2026 %VITE_BUSINESS_NAME%. %VITE_FOOTER_COPY%
+                Estate.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
